@@ -1,0 +1,123 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="jumbotron">
+  <h1 class="text-center mb-3">We want to learn more about you!</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">What is your name?</label>
+      <input
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Full Name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">What is email?</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Create your password:</label>
+      <input
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Province?</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Ontario</option>
+        <option>Quebec</option>
+        <option>Alberta</option>
+        <option>British Columbia</option>
+        <option>PEI</option>
+        <option>Manitoba</option>
+        <option>New Brunswick</option>
+        <option>Newfoundland and Labrador</option>
+        <option>Nova Scotia</option>
+        <option>Nunavut</option>
+        <option>Yukon</option>
+        <option>Saskatchewan</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">When are you graduating?</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+      </select>
+    </div>
+
+    <label>Do you identify with any of these groups?</label>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="defaultCheck1"
+      />
+      <label class="form-check-label" for="defaultCheck1"> Black </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="defaultCheck2"
+      />
+      <label class="form-check-label" for="defaultCheck2"> Latino </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="defaultCheck2"
+      />
+      <label class="form-check-label" for="defaultCheck2"> Indigenous </label>
+    </div>
+
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="defaultCheck1"
+      />
+      <label class="form-check-label" for="defaultCheck1"> LGBTQ+ </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="defaultCheck1"
+      />
+      <label class="form-check-label" for="defaultCheck1">
+        None of these
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1"
+        >Do you have any prior experience with technology?</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+  </form>
+
+  <a href="/" class="btn btn-primary btn-sm">Submit</a>
+</div>
+
+{% endblock %}

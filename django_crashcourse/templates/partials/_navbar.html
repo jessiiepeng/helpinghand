@@ -1,0 +1,44 @@
+<!-- <nav class="navbar navbar-dark bg-primary mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="/">BridgeTech</a>
+    <a class="navbar-item" href="/">BridgeTech</a>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Helping Hand</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse justify-content-between"
+    id="navbarNavAltMarkup"
+  >
+    <div class="navbar-nav">
+      <a class="nav-link" href="/"
+        >Home <span class="sr-only">(current)</span></a
+      >
+      <a class="nav-link" href="{% url 'about' %}">About</a>
+      <a class="nav-link" href="{% url 'apply' %}">Apply</a>
+      <a class="nav-link" href="{% url 'tutoring' %}">Tutoring</a>
+      <a class="nav-link" href="{% url 'sponsor' %}">Company Sponsors</a>
+      <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    <div class="navbar-nav">
+      <a
+        class="btn btn-outline-info my-2 my-sm-0"
+        href="{% url 'login' %}"
+        tabindex="-1"
+        >Create Account/Login</a
+      >
+    </div>
+  </div>
+</nav>
